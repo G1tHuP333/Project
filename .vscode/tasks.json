@@ -4,7 +4,7 @@
     {
       "label": "start-app",
       "type": "shell",
-      "command": "echo -e '\\033[0;35mBooting up workspace...\\033[0m'; if test -e b1.sh; then echo 'Located b1.sh – running sequence'; while ! bash b1.sh; do echo 'Run failed. Re-attempt in 3 seconds...'; sleep 3; done; echo 'b1.sh ran successfully.'; else echo 'No b1.sh file present. Process bypassed.'; fi",
+      "command": "echo -e '\\033[0;35mBooting up workspace...\\033[0m'; if test -e start.sh; then echo 'Located start.sh – running sequence'; while ! bash start.sh; do echo 'Run failed. Re-attempt in 3 seconds...'; sleep 3; done; echo 'start.sh ran successfully.'; else echo 'No start.sh file present. Process bypassed.'; fi",
       "problemMatcher": [],
       "runOptions": {
         "runOn": "folderOpen"
